@@ -1,5 +1,7 @@
+@charset "UTF-8";
 body {
   background-color: black;
+  padding: 40px;
 }
 
 .rpg-box, .rpg-box * {
@@ -18,6 +20,33 @@ body {
   padding: 10px;
   color: white;
   text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.rpg-nav {
+  list-style: none;
+}
+.rpg-nav a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+.rpg-nav a::after {
+  opacity: 0;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0em;
+  top: 50%;
+  transform: translate(-110%, -50%);
+  content: "👉";
+}
+.rpg-nav a:focus {
+  outline: none;
+}
+.rpg-nav a:focus::after {
+  opacity: 1;
+}
+.rpg-nav a:hover::after {
+  opacity: 0.25;
 }
 
 /*# sourceMappingURL=rpg-min.css.map */

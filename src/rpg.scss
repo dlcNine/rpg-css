@@ -13,9 +13,12 @@ $box-border-width: 2px;
 $box-border-radius: 4px;
 $box-padding: 10px;
 
+$focus-pointer: '\01F449';
+
 // base
 body {
     background-color: black;
+    padding: 40px;
 }
 
 .rpg-box, .rpg-box * {
@@ -35,6 +38,39 @@ body {
     padding: $box-padding;
     color: $color;
     text-shadow: 2px 1px 0px $color-shadow;
+}
+
+// ul
+.rpg-nav {
+    list-style: none;
+
+    a {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+
+        &::after {
+            opacity: 0;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0em;
+            top: 50%;
+            transform: translate(-110%, -50%);
+            content: $focus-pointer;
+        }
+
+        &:focus {
+            outline: none;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &:hover::after {
+            opacity: 0.25;
+        }
+    }
 }
 
 // themes
