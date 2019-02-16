@@ -1,0 +1,16 @@
+@import "../base/colors.scss";
+
+$box-border-width: 2px;
+$box-border-radius: 4px;
+$box-padding: 10px;
+
+.rpg-box {
+    border-width: $box-border-width;
+    border-style: solid;
+    border-color: $border-light $border-dark $border-dark $border-light;
+    border-radius: $box-border-radius;
+    background-image: linear-gradient(170deg, $primary-light, $primary-dark);
+    padding: $box-padding;
+    color: $text-color;
+    text-shadow: 2px 1px 0px $text-color-shadow;
+}

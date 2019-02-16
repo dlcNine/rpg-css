@@ -1,0 +1,25 @@
+@import "../base/colors.scss";
+
+.rpg-progress {
+    height: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $border-light;
+    background-color: rgb(101, 101, 101);
+    box-shadow: 2px 2px 0px 1px $text-color-shadow inset;
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.rpg-progress-bar {
+    float: left;
+    height: 100%;
+    max-width: 100%;
+    background-color: rgb(234, 154, 168);
+    box-shadow: 2px 2px 0px 1px $text-color-shadow inset;
+    transition: width 200ms;
+}
