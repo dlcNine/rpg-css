@@ -1,10 +1,23 @@
+body {
+  background-color: black;
+}
+
+.rpg-box, .rpg-box * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .rpg-box {
-  border-width: 4px;
+  border-width: 2px;
   border-style: solid;
-  border-color: #c7c7c7 #adacac #adacac #c7c7c7;
-  border-radius: 6px;
-  background-color: #1c1cd6;
+  border-color: #c7c7c7 #acacac #acacac #c7c7c7;
+  border-radius: 4px;
+  background-image: linear-gradient(170deg, #1235de, #060033);
   padding: 10px;
+  color: white;
+  text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=rpg-min.css.map */

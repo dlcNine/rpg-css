@@ -1,23 +1,40 @@
 $color: white;
-$color-shadow: black;
-$box-border-light: #c7c7c7;
-$box-border-dark: #adacac;
-$box-border-width: 4px;
-$box-border-radius: 6px;
-$box-background-color: #1c1cd6;
+$color-shadow: rgba(0, 0, 0, 0.5);
+
+$primary-light: rgb(18, 53, 222);
+$primary-dark: rgb(6, 0, 51);
+
+$border-light: rgb(199, 199, 199);
+$border-dark: rgb(172, 172, 172);
+
+$font-stack: sans-serif;
+
+$box-border-width: 2px;
+$box-border-radius: 4px;
 $box-padding: 10px;
 
 // base
+body {
+    background-color: black;
+}
+
+.rpg-box, .rpg-box * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: $font-stack;
+}
 
 // components
 .rpg-box {
     border-width: $box-border-width;
     border-style: solid;
-    border-color: $box-border-light $box-border-dark $box-border-dark $box-border-light;
+    border-color: $border-light $border-dark $border-dark $border-light;
     border-radius: $box-border-radius;
-    background-color: $box-background-color;
+    background-image: linear-gradient(170deg, $primary-light, $primary-dark);
     padding: $box-padding;
+    color: $color;
+    text-shadow: 2px 1px 0px $color-shadow;
 }
 
 // themes
-
