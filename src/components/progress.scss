@@ -1,5 +1,13 @@
 @import "../base/colors.scss";
 
+$limit-break-pink: rgb(234, 154, 168);
+$limit-break-orange: rgb(222, 184, 154);
+$limit-break-yellow: rgb(235, 231, 184);
+$limit-break-green: rgb(218, 241, 191);
+$limit-break-blue: rgb(160, 225, 225);
+$limit-break-indigo: rgb(158, 160, 222);
+$limit-break-violet: rgb(240, 197, 244);
+
 .rpg-progress {
     height: 18px;
     border-width: 2px;
@@ -15,11 +23,27 @@
     }
 }
 
+@keyframes isCharged {
+    0% { background-color: $limit-break-pink;}
+    10% { background-color: $limit-break-orange;}
+    30% { background-color: $limit-break-yellow;}
+    40% { background-color: $limit-break-green;}
+    50% { background-color: $limit-break-blue;}
+    60% { background-color: $limit-break-indigo;}
+    95% { background-color: $limit-break-violet;}
+    100% { background-color: $limit-break-pink;}
+}
+
+.is-charged {
+    animation: isCharged 600ms linear 0ms infinite;
+}
+
 .rpg-progress-bar {
     float: left;
     height: 100%;
     max-width: 100%;
-    background-color: rgb(234, 154, 168);
+    background-color: $limit-break-pink;
     box-shadow: 2px 2px 0px 1px $text-color-shadow inset;
     transition: width 200ms;
 }
+
