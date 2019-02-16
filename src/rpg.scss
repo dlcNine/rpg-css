@@ -1,0 +1,23 @@
+$color: white;
+$color-shadow: black;
+$box-border-light: #c7c7c7;
+$box-border-dark: #adacac;
+$box-border-width: 4px;
+$box-border-radius: 6px;
+$box-background-color: #1c1cd6;
+$box-padding: 10px;
+
+// base
+
+// components
+.rpg-box {
+    border-width: $box-border-width;
+    border-style: solid;
+    border-color: $box-border-light $box-border-dark $box-border-dark $box-border-light;
+    border-radius: $box-border-radius;
+    background-color: $box-background-color;
+    padding: $box-padding;
+}
+
+// themes
+

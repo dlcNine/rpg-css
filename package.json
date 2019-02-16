@@ -1,0 +1,29 @@
+{
+  "name": "rpg-css",
+  "version": "0.0.1",
+  "description": "UI inspired by rpgs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node node_modules/dart-sass/sass.js src/rpg.scss dist/rpg-min.css --style compressed",
+    "watch": "node node_modules/dart-sass/sass.js --watch src/rpg.scss:dist/rpg-min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlcNine/rpg-css.git"
+  },
+  "keywords": [
+    "UI",
+    "rpg",
+    "css"
+  ],
+  "author": "dlcnine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlcNine/rpg-css/issues"
+  },
+  "homepage": "https://github.com/dlcNine/rpg-css#readme",
+  "devDependencies": {
+    "dart-sass": "^1.17.0"
+  }
+}
