@@ -1,34 +1,16 @@
-$nav-pointer: '\01F449';
+
 
 // ul
 .rpg-nav {
-    list-style: none;
 
-    a {
-        position: relative;
-        color: inherit;
-        text-decoration: none;
+}
 
-        &::after {
-            opacity: 0;
-            font-size: 1.5em;
-            position: absolute;
-            left: 0em;
-            top: 50%;
-            transform: translate(-110%, -50%);
-            content: $nav-pointer;
-        }
+// li
+.rpg-nav-item {
 
-        &:focus {
-            outline: none;
+}
 
-            &::after {
-                opacity: 1;
-            }
-        }
+// a
+.rpg-nav-a {
 
-        &:hover::after {
-            opacity: 0.25;
-        }
-    }
 }
