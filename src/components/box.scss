@@ -12,6 +12,7 @@ $box-padding: 0.625em;
     border-style: solid;
     border-color: $border-light $border-dark $border-dark $border-light;
     border-radius: $box-border-radius;
+    background-color: $primary-light;
     background-image: linear-gradient(170deg, $primary-light, $primary-dark);
     padding: $box-padding;
 }

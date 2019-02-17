@@ -1,9 +1,12 @@
-$text-color: white;
-
+$alpha-white: rgba(255, 255, 255, 0.9);
+$alpha-white-muted: rgba(255, 255, 255, 0.7);
 $alpha-dark: rgba(0, 0, 0, 0.5);
 
 $primary-light: rgb(18, 53, 222);
 $primary-dark: rgb(6, 0, 51);
+
+$hp: rgb(22, 170, 214);
+$mp: rgb(23, 185, 36);
 
 $border-light: rgb(199, 199, 199);
 $border-dark: rgb(172, 172, 172);

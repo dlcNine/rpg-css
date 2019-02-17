@@ -32,6 +32,10 @@ $progress-border-width: 0.125em;
         border: none;
         box-shadow: none;
         height: $progress-height-mini;
+
+        & .rpg-progress-bar {
+            box-shadow: none;
+        }
     }
 }
 
@@ -40,7 +44,7 @@ $progress-border-width: 0.125em;
     height: 100%;
     max-width: 100%;
     background-color: $limit-break-pink;
-    box-shadow: 2px 2px 0px 1px $alpha-dark inset;
+    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-dark inset;
     transition: width 200ms;
 
     &.is-charged {
