@@ -1,0 +1,54 @@
+@import "../base/colors.scss";
+
+$progress-height: 1em;
+$progress-height-mini: 0.125em;
+$progress-border-width: 0.125em;
+
+@keyframes isCharged {
+    0% { background-color: $limit-break-pink;}
+    10% { background-color: $limit-break-orange;}
+    30% { background-color: $limit-break-yellow;}
+    40% { background-color: $limit-break-green;}
+    50% { background-color: $limit-break-blue;}
+    60% { background-color: $limit-break-indigo;}
+    95% { background-color: $limit-break-violet;}
+    100% { background-color: $limit-break-pink;}
+}
+
+.rpg-progress {
+    font-size: $base-font-size;
+    height: $progress-height;
+    border: $progress-border-width solid $border-light;
+    background-color: $gray-medium;
+    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-dark inset;
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    &.mini {
+        border: none;
+        box-shadow: none;
+        height: $progress-height-mini;
+
+        & .rpg-progress-bar {
+            box-shadow: none;
+        }
+    }
+}
+
+.rpg-progress-bar {
+    float: left;
+    height: 100%;
+    max-width: 100%;
+    background-color: $limit-break-pink;
+    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-dark inset;
+    transition: width 200ms;
+
+    &.is-charged {
+        animation: isCharged 600ms linear 0ms infinite;
+    }
+}
+

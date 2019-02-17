@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "open -a 'Sublime Text' package.json index.html dist/rpg-min.css src/base/*.scss src/components/*.scss src/rpg.scss",
     "build": "node node_modules/dart-sass/sass.js src/rpg.scss dist/rpg-min.css --style compressed",
     "watch": "node node_modules/dart-sass/sass.js --watch src/rpg.scss:dist/rpg-min.css"
   },

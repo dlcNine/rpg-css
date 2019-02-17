@@ -4,12 +4,53 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="description" content="UI inspired by classic RPG games, made for the web!">
-     <title>RPG-CSS | dlcnine</title>
+     <title>RPG CSS | dlcnine</title>
      <link rel="stylesheet" href="./dist/rpg-min.css" type="text/css">
+     <style>
+         body {
+             background-color: black;
+             padding: 2em
+         }
+         .not-part-of-framework-mb {
+             margin-bottom: 0.5rem;
+         }
+     </style>
 </head>
 <body>
     <div class="rpg-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, officia!</p>
+        <h1 class="not-part-of-framework-mb">RPG CSS (work in progress)</h1>
+        <p>A tiny set of reusable components that can be combined with your exsiting stylesheet. All of the component classes start with "rpg-".</p>
+        <h2>.rpg-box</h2>
+        <p>A simple container for content.</p>
+        <div class="rpg-box not-part-of-framework-mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore velit doloremque eligendi voluptas qui optio, quos ut. Natus, ea minima!</div>
+        <h2>.rpg-progress</h2>
+        <p>A container for one or multiple .rpg-progress-bar elements.</p>
+        <div class="rpg-progress not-part-of-framework-mb">
+        </div>
+        <h2>.rpg-progress.mini</h2>
+        <div class="rpg-progress mini not-part-of-framework-mb">
+        </div>
+        <h2>.rpg-progress-bar</h2>
+        <p>Use inside of the .rpg-progress element.</p>
+        <div class="rpg-progress not-part-of-framework-mb">
+            <div class="rpg-progress-bar" style="width: 95%;"></div>
+        </div>
+        <h3>.rpg-progress-bar.is-charged</h3>
+        <div class="rpg-progress not-part-of-framework-mb">
+            <div class="rpg-progress-bar is-charged" style="width: 100%"></div>
+        </div>
+        <h2>Themes</h2>
+        <p>Themes set the background-color and background-image for the element they're used on.</p>
+        <h2>.rpg-t-hp</h2>
+        <div class="rpg-progress mini not-part-of-framework-mb">
+            <div class="rpg-progress-bar rpg-t-hp" style="width: 70%;"></div>
+        </div>
+        <h2>.rpg-t-mp</h2>
+        <div class="rpg-progress mini not-part-of-framework-mb">
+            <div class="rpg-progress-bar rpg-t-mp" style="width:80%;"></div>
+        </div>
+        <p><a href="https://github.com/dlcNine/rpg-css" target="_blank">Check it out on github!</a></p>
+
     </div>
 </body>
 </html>

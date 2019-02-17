@@ -1,0 +1,11 @@
+@import "../base/colors.scss";
+
+.rpg-t-hp {
+    background-color: $hp;
+    background-image: linear-gradient(90deg, $hp, $alpha-white-muted);
+}
+
+.rpg-t-mp {
+    background-color: $mp;
+    background-image: linear-gradient(90deg, $mp, $alpha-white-muted);
+}
