@@ -3,8 +3,11 @@
 
 // components
 @import "./components/box.scss";
-// @import "./components/nav.scss";
+@import "./components/nav.scss";
 @import "./components/progress.scss";
+
+// utilities
+@import "./utilities/text.scss";
 
 // themes
 @import "./themes/themes.scss";
