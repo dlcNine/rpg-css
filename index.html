@@ -18,19 +18,20 @@
 </head>
 <body>
     <div class="rpg-box">
-        <h1 class="not-part-of-framework-mb">RPG CSS (work in progress)</h1>
-        <p>A tiny set of reusable components that can be combined with your exsiting stylesheet. All of the component classes start with "rpg-".</p>
-        <h2>.rpg-box</h2>
+        <h1 class="not-part-of-framework-mb">RPG CSS</h1>
+        <p>A tiny set of reusable components and color classes that can be combined with your existing stylesheet. All of the component classes start with "rpg-".</p>
+        <h2 class="rpg-c-accent not-part-of-framework-mb">Components</h2>
+        <h3>.rpg-box</h3>
         <p>A simple container for content.</p>
         <div class="rpg-box not-part-of-framework-mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore velit doloremque eligendi voluptas qui optio, quos ut. Natus, ea minima!</div>
-        <h2>.rpg-progress</h2>
+        <h3>.rpg-progress</h3>
         <p>A container for one or multiple .rpg-progress-bar elements.</p>
         <div class="rpg-progress not-part-of-framework-mb">
         </div>
-        <h2>.rpg-progress.mini</h2>
+        <h3>.rpg-progress.mini</h3>
         <div class="rpg-progress mini not-part-of-framework-mb">
         </div>
-        <h2>.rpg-progress-bar</h2>
+        <h3>.rpg-progress-bar</h3>
         <p>Use inside of the .rpg-progress element.</p>
         <div class="rpg-progress not-part-of-framework-mb">
             <div class="rpg-progress-bar" style="width: 95%;"></div>
@@ -39,18 +40,53 @@
         <div class="rpg-progress not-part-of-framework-mb">
             <div class="rpg-progress-bar is-charged" style="width: 100%"></div>
         </div>
-        <h2>Themes</h2>
+        <h3>.rpg-nav .rpg-nav-item .rpg-nav-a</h3>
+        <p>A nestable vertical nav with hover and focus states. Using the .is-active class on an .rpg-nav-item styles the .rpg-nav-a within.</p>
+        <ul class="rpg-nav not-part-of-framework-mb">
+            <li class="rpg-nav-item">
+                <a href="" class="rpg-nav-a">Party</a>
+            </li>
+            <li class="rpg-nav-item">
+                <a href="" class="rpg-nav-a">Equip</a>
+            </li>
+            <li class="rpg-nav-item">
+                <a href="" class="rpg-nav-a">Items</a>
+                <ul class="rpg-nav">
+                    <li class="rpg-nav-item">
+                        <a href="" class="rpg-nav-a">potion</a>
+                    </li>
+                    <li class="rpg-nav-item">
+                        <a href="" class="rpg-nav-a">power up</a>
+                    </li>
+                    <li class="rpg-nav-item">
+                        <a href="" class="rpg-nav-a">revive</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="rpg-nav-item">
+                <a href="" class="rpg-nav-a">Special</a>
+            </li>
+            <li class="rpg-nav-item is-active">
+                <a href="" class="rpg-nav-a">Save</a>
+            </li>
+        </ul>
+        <h2 class="rpg-c-accent not-part-of-framework-mb">Utilities</h2>
+        <p>Simple color utilities to change color of text.</p>
+        <h3>.rpg-c-dark</h3>
+        <p class="rpg-c-dark">Lorem ipsum dolor.</p>
+        <h3>.rpg-c-accent</h3>
+        <p class="rpg-c-accent">Lorem ipsum dolor.</p>
+        <h2 class="rpg-c-accent not-part-of-framework-mb">Themes</h2>
         <p>Themes set the background-color and background-image for the element they're used on.</p>
-        <h2>.rpg-t-hp</h2>
+        <h3>.rpg-t-hp</h3>
         <div class="rpg-progress mini not-part-of-framework-mb">
             <div class="rpg-progress-bar rpg-t-hp" style="width: 70%;"></div>
         </div>
-        <h2>.rpg-t-mp</h2>
+        <h3>.rpg-t-mp</h3>
         <div class="rpg-progress mini not-part-of-framework-mb">
             <div class="rpg-progress-bar rpg-t-mp" style="width:80%;"></div>
         </div>
         <p><a href="https://github.com/dlcNine/rpg-css" target="_blank">Check it out on github!</a></p>
-
     </div>
 </body>
 </html>
