@@ -20,6 +20,11 @@ $toggle-margin: 0.5em;
 
 .rpg-toggle input {
     display: none;
+
+    &[disabled] + i {
+        opacity: $disabled-opacity;
+        cursor: not-allowed;
+    }
 }
 
 .rpg-toggle input + i {

@@ -9,8 +9,26 @@ $textarea-max-height: 14em;
 $textbox-border-width: 0.0625em;
 
 
-.rpg-textbox:not(select) {
-    appearance: none;
+.rpg-textbox {
+    &:not(select) {
+        appearance: none;
+    }
+
+    &[multiple] {
+        height: auto;
+    }
+
+    &[readonly], &[disabled] {
+        cursor: not-allowed;
+    }
+
+    &[readonly]:focus {
+        border-color: $alpha-white-dark;
+    }
+
+    &[disabled] {
+        opacity: $disabled-opacity;
+    }
 }
 
 .rpg-textbox {
@@ -27,6 +45,7 @@ $textbox-border-width: 0.0625em;
 }
 
 .rpg-textbox:focus {
+    border-color: $alpha-white-medium;
     outline: none;
 }
 
@@ -36,3 +55,7 @@ textarea.rpg-textbox {
     min-height: $textarea-min-height;
     max-height: $textarea-max-height;
 }
+
+
+
+
