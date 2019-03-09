@@ -12,10 +12,8 @@
         box-sizing: border-box;
     }
 
-    a {
+    a, .rpg-button {
         position: relative;
-        color: inherit;
-        text-decoration: none;
 
         &::after {
             opacity: 0;
@@ -38,6 +36,11 @@
         &:hover::after {
             opacity: 0.5;
         }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 
     p {

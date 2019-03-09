@@ -1,0 +1,30 @@
+@import "../base/colors.scss";
+@import "../base/variables.scss";
+
+$button-padding: 0.5em;
+
+.rpg-button {
+    font-size: $base-font-size;
+    text-align: center;
+    background-color: transparent;
+    padding: $button-padding $button-padding $button-padding 0em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &[disabled] {
+        color: $gray-medium;
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.wide {
+        padding-right: 0em;
+        display: block;
+        width: 100%;
+    }
+}
