@@ -26,12 +26,6 @@ $nav-item-padding: 0.25em;
 
     &.is-active .rpg-nav-a::after {
         opacity: 1;
-        font-size: 1.5em;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(-110%, -50%);
-        content: $link-pointer;
     }
 }
 

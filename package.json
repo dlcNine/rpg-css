@@ -1,12 +1,13 @@
 {
   "name": "rpg-css",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "UI inspired by rpgs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open": "open -a 'Sublime Text' package.json index.html dist/rpg-min.css src/base/*.scss src/components/*.scss src/rpg.scss",
-    "build": "node node_modules/dart-sass/sass.js src/rpg.scss dist/rpg-min.css --style compressed",
+    "build-compressed": "node node_modules/dart-sass/sass.js src/rpg.scss dist/rpg-min.css --style compressed",
+    "build-autoprefix": "npx postcss dist/rpg-min.css --use autoprefixer --map true -d dist/",
+    "build": "npm run build-compressed && npm run build-autoprefix",
     "watch": "node node_modules/dart-sass/sass.js --watch src/rpg.scss:dist/rpg-min.css"
   },
   "repository": {
@@ -25,6 +26,9 @@
   },
   "homepage": "https://github.com/dlcNine/rpg-css#readme",
   "devDependencies": {
-    "dart-sass": "^1.17.0"
+    "autoprefixer": "^9.4.10",
+    "dart-sass": "^1.17.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2"
   }
 }

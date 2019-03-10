@@ -1,10 +1,18 @@
-$alpha-white: rgba(255, 255, 255, 0.9);
-$alpha-white-muted: rgba(255, 255, 255, 0.7);
-$alpha-dark: rgba(0, 0, 0, 0.5);
+$alpha-white: rgba(255, 255, 255, 0.85);
+$alpha-white-medium: rgba(255, 255, 255, 0.5);
+$alpha-white-dark: rgba(255, 255, 255, 0.3);
 
-$primary-light: rgb(18, 53, 222);
+$alpha-black: rgba(0, 0, 0, 0.5);
+$alpha-black-dark: rgba(0, 0, 0, 0.3);
+
+$primary-light: rgb(6, 32, 156);
 $primary-dark: rgb(6, 0, 51);
 $alpha-primary: rgba(16, 2, 130, 0.5);
+
+$toggle-radio: rgb(234, 40, 210);
+$toggle-radio-dark: rgb(74, 4, 69);
+$toggle-checkbox: rgb(36, 222, 50);
+$toggle-checkbox-dark: rgb(0, 27, 3);
 
 $hp: rgb(22, 170, 214);
 $mp: rgb(23, 185, 36);
@@ -22,3 +30,4 @@ $limit-break-indigo: rgb(158, 160, 222);
 $limit-break-violet: rgb(240, 197, 244);
 
 $gray-medium: rgb(101, 101, 101);
+$gray-dark: rgb(43, 43, 43);

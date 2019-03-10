@@ -1,0 +1,61 @@
+@import "../base/colors.scss";
+@import "../base/variables.scss";
+
+$textbox-padding: 0em 0.5em;
+$textbox-height: 1.75em;
+$textbox-line-height: 1.5;
+$textarea-min-height: 4.5em;
+$textarea-max-height: 14em;
+$textbox-border-width: 0.0625em;
+
+
+.rpg-textbox {
+    &:not(select) {
+        appearance: none;
+    }
+
+    &[multiple] {
+        height: auto;
+    }
+
+    &[readonly], &[disabled] {
+        cursor: not-allowed;
+    }
+
+    &[readonly]:focus {
+        border-color: $alpha-white-dark;
+    }
+
+    &[disabled] {
+        opacity: $disabled-opacity;
+    }
+}
+
+.rpg-textbox {
+    font-size: $base-font-size;
+    padding: $textbox-padding;
+    height: $textbox-height;
+    line-height: $textbox-line-height;
+    display: block;
+    width: 100%;
+    background-color: $alpha-black-dark;
+    border-bottom: $textbox-border-width solid $alpha-white-dark;
+    border-right: $textbox-border-width solid $alpha-white-dark;
+    border-radius: 0;
+}
+
+.rpg-textbox:focus {
+    border-color: $alpha-white-medium;
+    outline: none;
+}
+
+textarea.rpg-textbox {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: $textarea-min-height;
+    max-height: $textarea-max-height;
+}
+
+
+
+
