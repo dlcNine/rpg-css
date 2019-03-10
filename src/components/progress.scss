@@ -20,7 +20,7 @@ $progress-border-width: 0.125em;
     height: $progress-height;
     border: $progress-border-width solid $border-light;
     background-color: $gray-medium;
-    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-dark inset;
+    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-black inset;
 
     &::after {
         content: '';
@@ -44,7 +44,7 @@ $progress-border-width: 0.125em;
     height: 100%;
     max-width: 100%;
     background-color: $limit-break-pink;
-    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-dark inset;
+    box-shadow: 0.125em 0.125em 0em 0.0625em $alpha-black inset;
     transition: width 200ms;
 
     &.is-charged {

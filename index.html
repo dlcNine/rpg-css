@@ -11,45 +11,48 @@
              background-color: black;
              padding: 2em
          }
-         .not-part-of-framework-mb {
+         .mb-half {
              margin-bottom: 0.5rem;
+         }
+         .mb-1 {
+             margin-bottom: 1em;
          }
      </style>
 </head>
 <body>
-    <div class="rpg-title-box not-part-of-framework-mb">
+    <div class="rpg-title-box mb-half">
         <h1 class="">RPG CSS</h1>
     </div>
     <div class="rpg-box">
-        <p>A tiny set of reusable components and color classes that can be combined with your existing stylesheet. All of the component classes start with "rpg-".</p>
-        <h2 class="rpg-c-accent not-part-of-framework-mb">Components</h2>
+        <p>A small css framework that can be combined with your existing stylesheet. All of the component classes start with "rpg-".</p>
+        <h2 class="rpg-c-accent mb-half">Components</h2>
         <h3>.rpg-box</h3>
         <p>A simple container for content.</p>
-        <div class="rpg-box not-part-of-framework-mb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore velit doloremque eligendi voluptas qui optio, quos ut. Natus, ea minima!</div>
+        <div class="rpg-box mb-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore velit doloremque eligendi voluptas qui optio, quos ut. Natus, ea minima!</div>
         <h3>.rpg-title-box</h3>
         <p>A container that centers text, and has a flat background with reduced opacity.</p>
-        <div class="rpg-title-box not-part-of-framework-mb">
+        <div class="rpg-title-box mb-half">
             <h4>Special Attack</h4>
         </div>
         <h3>.rpg-progress</h3>
         <p>A container for one or multiple .rpg-progress-bar elements.</p>
-        <div class="rpg-progress not-part-of-framework-mb">
+        <div class="rpg-progress mb-half">
         </div>
         <h3>.rpg-progress.mini</h3>
-        <div class="rpg-progress mini not-part-of-framework-mb">
+        <div class="rpg-progress mini mb-half">
         </div>
         <h3>.rpg-progress-bar</h3>
         <p>Use inside of the .rpg-progress element.</p>
-        <div class="rpg-progress not-part-of-framework-mb">
+        <div class="rpg-progress mb-half">
             <div class="rpg-progress-bar" style="width: 95%;"></div>
         </div>
         <h3>.rpg-progress-bar.is-charged</h3>
-        <div class="rpg-progress not-part-of-framework-mb">
+        <div class="rpg-progress mb-half">
             <div class="rpg-progress-bar is-charged" style="width: 100%"></div>
         </div>
         <h3>.rpg-nav .rpg-nav-item .rpg-nav-a</h3>
         <p>A nestable vertical nav with hover and focus states. Using the .is-active class on an .rpg-nav-item styles the .rpg-nav-a within.</p>
-        <ul class="rpg-nav not-part-of-framework-mb">
+        <ul class="rpg-nav mb-half">
             <li class="rpg-nav-item">
                 <a href="" class="rpg-nav-a">Party</a>
             </li>
@@ -77,20 +80,66 @@
                 <a href="" class="rpg-nav-a">Save</a>
             </li>
         </ul>
-        <h2 class="rpg-c-accent not-part-of-framework-mb">Utilities</h2>
+        <h2 class="rpg-c-accent mb-half">Controls</h2>
+        <p>Basic controls for user input.</p>
+        <h3 class="mb-half">.rpg-textbox</h3>
+        <input type="text" class="rpg-textbox mb-half" placeholder="text">
+        <select class="rpg-textbox mb-half">
+            <option value="" selected>select</option>
+            <option value="option">option</option>
+        </select>
+        <textarea class="rpg-textbox mb-half" placeholder="textarea"></textarea>
+        <h3 class="mb-half">.rpg-toggle</h3>
+        <p class="mb-half">The .rpg-toggle display is set to 'inline-flex'. To have them each start on a new line use 'display: flex'.</p>
+        <label class="rpg-toggle">
+            <input name="radios" type="radio">
+            <i></i>
+            radio
+        </label>
+        <label class="rpg-toggle">
+            <input name="radios" type="radio">
+            <i></i>
+            radio
+        </label>
+        <label class="rpg-toggle">
+            <input name="radios" type="radio">
+            <i></i>
+            radio
+        </label>
+        <label class="rpg-toggle">
+            <input type="checkbox" name="checkboxes">
+            <i></i>
+            checkbox
+        </label>
+        <label class="rpg-toggle">
+            <input type="checkbox" name="checkboxes">
+            <i></i>
+            checkbox
+        </label>
+        <label class="rpg-toggle mb-half">
+            <input type="checkbox" name="checkboxes">
+            <i></i>
+            checkbox
+        </label>
+        <h3 class="mb-half">.rpg-button</h3>
+        <button class="rpg-button">button</button>
+        <button class="rpg-button">button</button>
+        <button class="rpg-button">button</button>
+        <button class="rpg-button wide">button wide</button>
+        <h2 class="rpg-c-accent mb-half">Utilities</h2>
         <p>Simple color utilities to change color of text.</p>
         <h3>.rpg-c-dark</h3>
         <p class="rpg-c-dark">Lorem ipsum dolor.</p>
         <h3>.rpg-c-accent</h3>
         <p class="rpg-c-accent">Lorem ipsum dolor.</p>
-        <h2 class="rpg-c-accent not-part-of-framework-mb">Themes</h2>
+        <h2 class="rpg-c-accent mb-half">Themes</h2>
         <p>Themes set the background-color and background-image for the element they're used on.</p>
         <h3>.rpg-t-hp</h3>
-        <div class="rpg-progress mini not-part-of-framework-mb">
+        <div class="rpg-progress mini mb-half">
             <div class="rpg-progress-bar rpg-t-hp" style="width: 70%;"></div>
         </div>
         <h3>.rpg-t-mp</h3>
-        <div class="rpg-progress mini not-part-of-framework-mb">
+        <div class="rpg-progress mini mb-half">
             <div class="rpg-progress-bar rpg-t-mp" style="width:80%;"></div>
         </div>
         <p><a href="https://github.com/dlcNine/rpg-css" target="_blank">Check it out on github!</a></p>

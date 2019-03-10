@@ -1,0 +1,70 @@
+@import "../base/colors.scss";
+@import "../base/variables.scss";
+
+$toggle-size: 1.25em;
+$toggle-border-width: 0.125em;
+$toggle-dot-size: 0.25em;
+$toggle-margin: 0.5em;
+
+// label
+.rpg-toggle {
+    font-size: $base-font-size;
+    display: inline-flex;
+    align-items: center;
+    margin-right: $toggle-margin;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.rpg-toggle input {
+    display: none;
+
+    &[disabled] + i {
+        opacity: $disabled-opacity;
+        cursor: not-allowed;
+    }
+}
+
+.rpg-toggle input + i {
+    position: relative;
+    display: inline-block;
+    width: $toggle-size;
+    height: $toggle-size;
+    border-width: $toggle-border-width;
+    border-style: solid;
+    border-color: $border-light $border-dark $border-dark $border-light;
+    border-radius: $round;
+    background-color: $gray-dark;
+    margin-right: $toggle-margin;
+}
+
+.rpg-toggle input + i::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: $toggle-dot-size;
+    height: $toggle-dot-size;
+    background-image: radial-gradient($alpha-white, $alpha-black);
+    border-radius: $round;
+}
+
+.rpg-toggle input[type="radio"]:checked + i {
+    background-color: $toggle-radio;
+    background-image: radial-gradient($toggle-radio, $toggle-radio-dark);
+}
+
+.rpg-toggle input[type="checkbox"]:checked + i {
+    background-color: $toggle-checkbox;
+    background-image: radial-gradient($toggle-checkbox, $toggle-checkbox-dark);
+}
+
+.rpg-toggle input:checked + i::before {
+    background-image: radial-gradient($alpha-white-medium, transparent);
+    left: 40%;
+    top: 40%;
+}
