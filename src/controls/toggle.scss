@@ -53,8 +53,14 @@ $toggle-margin: 0.5em;
     border-radius: $round;
 }
 
-.rpg-toggle input:checked + i {
-    background-image: radial-gradient($toggle-light, $toggle-dark);
+.rpg-toggle input[type="radio"]:checked + i {
+    background-color: $toggle-radio;
+    background-image: radial-gradient($toggle-radio, $toggle-radio-dark);
+}
+
+.rpg-toggle input[type="checkbox"]:checked + i {
+    background-color: $toggle-checkbox;
+    background-image: radial-gradient($toggle-checkbox, $toggle-checkbox-dark);
 }
 
 .rpg-toggle input:checked + i::before {
