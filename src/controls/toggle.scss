@@ -49,6 +49,7 @@ $toggle-margin: 0.5em;
     display: inline-block;
     width: $toggle-dot-size;
     height: $toggle-dot-size;
+    background-color: $alpha-white;
     background-image: radial-gradient($alpha-white, $alpha-black);
     border-radius: $round;
 }
@@ -64,6 +65,7 @@ $toggle-margin: 0.5em;
 }
 
 .rpg-toggle input:checked + i::before {
+    background-color: $alpha-white-medium;
     background-image: radial-gradient($alpha-white-medium, transparent);
     left: 40%;
     top: 40%;
