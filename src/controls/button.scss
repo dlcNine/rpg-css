@@ -5,26 +5,50 @@ $button-spacing: 0.5em;
 
 .rpg-button {
     font-size: $base-font-size;
+    position: relative;
     text-align: center;
     background-color: transparent;
     padding: $button-spacing 0em;
     margin-right: $button-spacing;
 
+    &::after {
+        color: $gray-medium;
+        opacity: 0;
+        font-size: 1.5em;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-110%, -50%);
+        content: $link-pointer;
+    }
+
     &:hover {
         cursor: pointer;
+
+        &::after {
+            opacity: 0.5;
+        }
+    }
+
+    &:focus {
+        outline: none;
+
+        &::after {
+            opacity: 1;
+        }
     }
 
     &:active {
-        color: $alpha-white-medium;
+        color: $gray-medium;
+
+        &::after {
+            opacity: 1;
+        }
     }
 
     &[disabled] {
         color: $gray-medium;
         cursor: not-allowed;
-    }
-
-    &:focus {
-        outline: none;
     }
 
     &.wide {

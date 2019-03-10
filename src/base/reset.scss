@@ -16,10 +16,13 @@
         }
     }
 
-    a, .rpg-button {
+    a {
         position: relative;
+        color: inherit;
+        text-decoration: none;
 
         &::after {
+            color: $gray-medium;
             opacity: 0;
             font-size: 1.5em;
             position: absolute;
@@ -29,6 +32,10 @@
             content: $link-pointer;
         }
 
+        &:hover::after {
+            opacity: 0.5;
+        }
+
         &:focus, &:focus:hover {
             outline: none;
 
@@ -36,15 +43,6 @@
                 opacity: 1;
             }
         }
-
-        &:hover::after {
-            opacity: 0.5;
-        }
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
     }
 
     p {
