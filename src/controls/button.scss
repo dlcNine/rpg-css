@@ -1,16 +1,21 @@
 @import "../base/colors.scss";
 @import "../base/variables.scss";
 
-$button-padding: 0.5em;
+$button-spacing: 0.5em;
 
 .rpg-button {
     font-size: $base-font-size;
     text-align: center;
     background-color: transparent;
-    padding: $button-padding $button-padding $button-padding 0em;
+    padding: $button-spacing 0em;
+    margin-right: $button-spacing;
 
     &:hover {
         cursor: pointer;
+    }
+
+    &:active {
+        color: $alpha-white-medium;
     }
 
     &[disabled] {
@@ -23,7 +28,6 @@ $button-padding: 0.5em;
     }
 
     &.wide {
-        padding-right: 0em;
         display: block;
         width: 100%;
     }

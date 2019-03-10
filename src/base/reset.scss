@@ -10,6 +10,10 @@
         color: $alpha-white;
         text-shadow: 0.125em 0.0625em 0em $alpha-black;
         box-sizing: border-box;
+
+        &::selection {
+            background-color: $border-dark;
+        }
     }
 
     a, .rpg-button {
