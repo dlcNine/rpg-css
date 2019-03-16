@@ -1,6 +1,6 @@
 {
   "name": "rpg-css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "UI inspired by rpgs",
   "main": "index.js",
   "scripts": {
