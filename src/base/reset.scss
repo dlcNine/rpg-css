@@ -22,6 +22,7 @@
         text-decoration: none;
 
         &::after {
+            pointer-events: none;
             color: $gray-medium;
             opacity: 0;
             font-size: 1.5em;
@@ -33,15 +34,19 @@
         }
 
         &:hover::after {
-            opacity: 0.5;
+            opacity: 1;
         }
 
-        &:focus, &:focus:hover {
+        &:focus {
             outline: none;
 
             &::after {
                 opacity: 1;
             }
+        }
+
+        &:active {
+            color: $gray-medium;
         }
     }
 

@@ -15,15 +15,24 @@ $toggle-margin: 0.5em;
 
     &:hover {
         cursor: pointer;
+
+        & i::after {
+            opacity: 1;
+        }
     }
 }
 
 .rpg-toggle input {
-    display: none;
+    position: absolute;
+    opacity: 0;
 
     &[disabled] + i {
         opacity: $disabled-opacity;
         cursor: not-allowed;
+    }
+
+    &:focus + i::after {
+        opacity: 1;
     }
 }
 
@@ -38,6 +47,18 @@ $toggle-margin: 0.5em;
     border-radius: $round;
     background-color: $gray-dark;
     margin-right: $toggle-margin;
+
+    &::after {
+        pointer-events: none;
+        color: $gray-medium;
+        opacity: 0;
+        font-size: 1.5em;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-120%, -50%);
+        content: $link-pointer;
+    }
 }
 
 .rpg-toggle input + i::before {
@@ -68,3 +89,5 @@ $toggle-margin: 0.5em;
     left: 40%;
     top: 40%;
 }
+
+
